@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+  --white: white;
+  --regular-purple: #771AC9;
+  --regular-light-purple: #821DDB;
+  --light-purple: #8D1CF5;
+  --gray: #F0F1F5;
+  --black: #202020;
+  
+  --tag-gray:#342745;
+  --tag-regular-purple: #512090;
+  --tag-light-purple: #9060CB;
+  --tag-white-purple: #88A0D5;
+}
+
+
+
+/* header */
+header {
+  width: 100%;
+  height: 300px;
+  background: var(--regular-purple);
+}
