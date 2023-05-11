@@ -1,3 +1,4 @@
+/* reset da página */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+/* definindo variáveis */
 :root {
   --white: white;
   --regular-purple: #771AC9;
@@ -19,11 +21,85 @@
   --tag-white-purple: #88A0D5;
 }
 
-
-
 /* header */
 header {
   width: 100%;
   height: 300px;
   background: var(--regular-purple);
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-primeira-linha {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* perfil usuario */
+
+.perfil-usuario {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.perfil-usuario .perfil-imagem {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--regular-light-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil-usuario .perfil-informacoes {
+  display: flex;
+  flex-direction: column;
+  line-height: 22px;
+}
+
+.perfil-usuario .perfil-informacoes .span-fino {
+  font-size: 18px;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.perfil-usuario .perfil-informacoes .span-grosso {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+/* ocultar valores */
+
+.ocultar-valores {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  background: var(--regular-light-purple);
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: .3s;
+}
+
+.ocultar-valores:hover {
+  background: var(--light-purple);
+}
+
+.ocultar-valores span {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
 }
