@@ -4,6 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
+  border: none;
+  outline: none;
 }
 
 /* definindo variáveis */
@@ -36,6 +38,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  row-gap: 50px;
 }
 
 .header-primeira-linha {
@@ -102,4 +105,61 @@ header {
   font-size: 16px;
   font-weight: 400;
   color: var(--white);
+}
+
+/* header segunda linha */
+
+.header-segunda-linha {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.header-segunda-linha .header-card {
+  width: 280px;
+  height: 90px;
+  background-color: var(--regular-light-purple);
+  padding: 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-segunda-linha .header-card .header-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.header-segunda-linha .header-card .header-card-info .span-fino {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.header-segunda-linha .header-card .header-card-info .span-grosso {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/*  header card button */
+
+.header-segunda-linha .header-card button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--regular-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-segunda-linha .header-card button span {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 200;
 }
